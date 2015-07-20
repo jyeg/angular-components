@@ -54,6 +54,8 @@ describe('Blog', () => {
   });
 
   describe('template', ()=> {
-
+		it('should have vm', () => {
+			expect(template).to.match(/{{\s?vm\.message\s?}}/g);
+		});
   });
 });
